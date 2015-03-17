@@ -1,0 +1,8 @@
+# solely send html from a directory
+
+server {
+  server_name   ~^(www\.)?(?<domain>.+)$;
+  root  /data/websites/$domain;
+}
+
+# override this with redirects per domain
