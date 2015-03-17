@@ -16,3 +16,9 @@ server {
   server_name phonebooq.q42.com phonebook.q42.com phonebook.q42.nl;
   return 301 $scheme://phonebooq.q42.nl$request_uri;
 }
+
+# Pijplijn alias
+server {
+  server_name pijplijn.q42.nl pijplijn.q42.com;
+  return 301 $scheme://pijplijn.meteor.com$request_uri;
+}
