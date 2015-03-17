@@ -29,6 +29,12 @@ server {
   return 301 $scheme://numolition.com;
 }
 
+# Sarien alias
+server {
+  server_name goodoldadventures.com www.goodoldadventures.com;
+  return 301 $scheme://sarien.net;
+}
+
 # Q42Games alias
 server {
   server_name q42games.com;
