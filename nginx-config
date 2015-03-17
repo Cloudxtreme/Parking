@@ -22,3 +22,13 @@ server {
   server_name pijplijn.q42.nl pijplijn.q42.com;
   return 301 $scheme://pijplijn.meteor.com$request_uri;
 }
+
+# Q42Games alias
+server {
+  server_name q42games.com;
+  return 301 $scheme://q42.com/games;
+}
+server {
+  server_name q42games.nl;
+  return 301 $scheme://q42.nl/games;
+}
