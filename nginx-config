@@ -25,10 +25,10 @@ server {
 
 # Q42Games alias
 server {
-  server_name q42games.com;
+  server_name ^(.+)?q42games.com;
   return 301 $scheme://q42.com/games;
 }
 server {
-  server_name q42games.nl;
+  server_name ^(.+)?q42games.nl;
   return 301 $scheme://q42.nl/games;
 }
