@@ -1,8 +1,13 @@
-# solely send html from a directory
+# solely send html from a directory, this is done in /etc/nginx/conf.d/default.conf
 
-server {
-  server_name   ~^(www\.)?(?<domain>.+)$;
-  root  /data/websites/$domain;
-}
+# server {
+#   server_name   ~^(www\.)?(?<domain>.+)$;
+#   root  /data/websites/$domain;
+# }
 
 # override this with redirects per domain
+
+server {
+  server_name phonebooq.q42.com phonebook.q42.com phonebook.q42.nl;
+  return 301 $scheme://phonebooq.q42.nl$request_uri;
+}
