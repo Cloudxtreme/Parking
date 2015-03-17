@@ -7,6 +7,13 @@
 
 # override this with redirects per domain
 
+# Catchall
+server {
+  listen 80 default_server;
+  root  /data/Parking/html;
+}
+
+# Phonebooq alias
 server {
   server_name phonebooq.q42.com phonebook.q42.com phonebook.q42.nl;
   return 301 $scheme://phonebooq.q42.nl$request_uri;
