@@ -1,17 +1,15 @@
 # solely send html from a directory, this is done in /etc/nginx/conf.d/default.conf
 
-# server {
-#   server_name   ~^(www\.)?(?<domain>.+)$;
-#   root  /data/websites/$domain;
-# }
+#  server {
+#    server_name ~^(www\.)?(?<domain>.+)$;
+#    set $gclouddirectory 130.211.48.86;
+#    if (-d /data/websites/$domain) {
+#      set $gclouddirectory $domain;
+#    }
+#    root /data/websites/$gclouddirectory;
+#  }
 
 # override this with redirects per domain
-
-# Catchall
-server {
-  listen 80 default_server;
-  root  /data/Parking/html;
-}
 
 # Phonebooq alias
 server {
