@@ -44,3 +44,21 @@ server {
   server_name q42games.nl;
   return 301 $scheme://q42.nl/games;
 }
+
+# w00tcamp alias
+server {
+  server_name wootcamp.nl www.wootcamp.nl w00tcamp.nl www.w00tcamp.nl;
+  return 301 $scheme://w00tcamp2014.tumblr.com;
+}
+
+# Sarien alias
+server {
+  server_name goodoldadventures.com www.goodoldadventures.com;
+  return 301 $scheme://sarien.net;
+}
+
+# MeetHue alias
+server {
+  server_name meethuey.com www.meethuey.com;
+  return 301 $scheme://meethue.com;
+}
