@@ -11,6 +11,12 @@
 
 # override this with redirects per domain
 
+# Q42.com alias
+server {
+  server_name q42.mobi www.q42.mobi q42.org www.q42.org;
+  return 301 $scheme://q42.com;
+}
+
 # Phonebooq alias
 server {
   server_name phonebooq.q42.com phonebook.q42.com phonebook.q42.nl;
@@ -61,4 +67,46 @@ server {
 server {
   server_name meethuey.com www.meethuey.com;
   return 301 $scheme://meethue.com;
+}
+
+# BeaconHQ alias
+server {
+  server_name beacon-hq.com www.beacon-hq.com beaconhq.net www.beaconhq.net beaconshq.com www.beaconshq.com beaconstorm.com www.beaconstorm.com beakypedia.com www.beakypedia.com;
+  return 301 $scheme://beaconhq.nl;
+}
+
+# HappyPlace alias
+server {
+  server_name www.happyplacefornerds.nl happyplacefornerds.com www.happyplacefornerds.com;
+  return 301 $scheme://happyplacefornerds.nl;
+}
+
+# Examenklacht alias
+server {
+  server_name examenlijn.com www.examenlijn.com examenklacht.com www.examenklacht.com;
+  return 301 $scheme://examenklacht.nl;
+}
+
+# Pienter alias
+server {
+  server_name pienter.nu www.pienter.nu pinter.nu www.pinter.nu;
+  return 301 $scheme://pienter.handcraft.com;
+}
+
+# TIXI alias
+server {
+  server_name playtixi.nl www.playtixi.nl;
+  return 301 $scheme://playtixi.com;
+}
+
+# Link App alias
+server {
+  server_name link-app.net www.link-app.net lnk-app.com www.lnk-app.com;
+  return 301 $scheme://www.linkapp.nl
+}
+
+# Rijksmuseum alias
+server {
+  server_name riksmuseum.nl www.riksmuseum.nl rijqsmuseum.nl www.rijqsmuseum.nl;
+  return 301 $scheme://rijksmuseum.nl
 }
