@@ -23,10 +23,34 @@ server {
   return 301 $scheme://phonebooq.q42.nl;
 }
 
-# Pijplijn alias
+# Tools alias
 server {
   server_name pijplijn.q42.nl pijplijn.q42.com;
   return 301 $scheme://pijplijn.meteor.com;
+}
+server {
+  server_name declaraties.q42.com deqlaraties.q42.com deqlaraties.q42.nl;
+  return 301 $scheme://declaraties.q42.nl;
+}
+server {
+  server_name kets.q42.com qets.q42.com qets.q42.nl;
+  return 301 $scheme://kets.q42.nl;
+}
+server {
+  server_name api.q42.com;
+  return 301 $scheme://api.q42.nl;
+}
+server {
+  server_name floorplan.q42.com floorplan.q42.nl;
+  return 301 $scheme://floorplan.meteor.com;
+}
+server {
+  server_name jarigejet.q42.com;
+  return 301 $scheme://jarigejet.q42.nl;
+}
+server {
+  server_name bedenktijdjes.q42.com bedenktijdjes.q42.nl;
+  return 301 $scheme://bedenktijdjes.meteor.com;
 }
 
 # Numolition alias
@@ -109,4 +133,16 @@ server {
 server {
   server_name riksmuseum.nl www.riksmuseum.nl rijqsmuseum.nl www.rijqsmuseum.nl;
   return 301 $scheme://rijksmuseum.nl
+}
+
+# Heat My Hands alias
+server {
+  server_name heatmyhands.com;
+  return 301 $scheme://www.heatmyhands.com
+}
+
+# Handcraft.com alias
+server {
+  server_name handkraft.es www.handkraft.es;
+  return 301 $scheme://www.handcraft.com
 }
