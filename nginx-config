@@ -126,23 +126,23 @@ server {
 # Link App alias
 server {
   server_name link-app.net www.link-app.net lnk-app.com www.lnk-app.com;
-  return 301 $scheme://www.linkapp.nl
+  return 301 $scheme://www.linkapp.nl;
 }
 
 # Rijksmuseum alias
 server {
   server_name riksmuseum.nl www.riksmuseum.nl rijqsmuseum.nl www.rijqsmuseum.nl;
-  return 301 $scheme://rijksmuseum.nl
+  return 301 $scheme://rijksmuseum.nl;
 }
 
 # Heat My Hands alias
 server {
   server_name heatmyhands.com;
-  return 301 $scheme://www.heatmyhands.com
+  return 301 $scheme://www.heatmyhands.com;
 }
 
 # Handcraft.com alias
 server {
   server_name handkraft.es www.handkraft.es;
-  return 301 $scheme://www.handcraft.com
+  return 301 $scheme://www.handcraft.com;
 }
