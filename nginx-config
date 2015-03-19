@@ -123,12 +123,6 @@ server {
   return 301 $scheme://playtixi.com;
 }
 
-# Link App alias
-server {
-  server_name link-app.net www.link-app.net lnk-app.com www.lnk-app.com;
-  return 301 $scheme://www.linkapp.nl;
-}
-
 # Rijksmuseum alias
 server {
   server_name riksmuseum.nl www.riksmuseum.nl rijqsmuseum.nl www.rijqsmuseum.nl;
@@ -143,6 +137,6 @@ server {
 
 # Handcraft.com alias
 server {
-  server_name handkraft.es www.handkraft.es;
+  server_name handkraft.es www.handkraft.es quplo.com www.quplo.com;
   return 301 $scheme://www.handcraft.com;
 }
