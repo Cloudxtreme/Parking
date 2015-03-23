@@ -10,7 +10,7 @@ sudo gsutil rsync -r gs://q42websites /data/websites >> /var/log/sync-gcloud.log
 # already ran sudo git clone https://github.com/Q42/Parking.git, now just update
 
 cd /data/Parking
-git fetch
+sudo git fetch
 LOCAL=$(git rev-parse @{0})
 REMOTE=$(git rev-parse @{u})
 BASE=$(git merge-base @{0} @{u})

@@ -25,6 +25,10 @@ server {
 
 # Tools alias
 server {
+  server_name app.q42.nl;
+  return 301 $scheme://app.q42.com;
+}
+server {
   server_name pijplijn.q42.nl pijplijn.q42.com;
   return 301 $scheme://pijplijn.meteor.com;
 }
