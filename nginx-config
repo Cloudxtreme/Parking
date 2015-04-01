@@ -23,6 +23,12 @@ server {
   return 301 $scheme://builds.q42.nl;
 }
 
+# Lessonup alias
+server {
+  server_name lessonup.de www.lessonup.de lessonup.be www.lessonup.be lessonup.nl www.lessonup.nl;
+  return 301 $scheme://lessonup.io;
+}
+
 # Tools alias
 server {
   server_name vault.q42.com;
