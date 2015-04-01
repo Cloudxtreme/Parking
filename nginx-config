@@ -25,6 +25,10 @@ server {
 
 # Tools alias
 server {
+  server_name vault.q42.com;
+  return 301 $scheme://vault.q42.nl;
+}
+server {
   server_name app.q42.nl;
   return 301 $scheme://app.q42.com;
 }
