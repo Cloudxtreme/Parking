@@ -25,7 +25,7 @@ server {
 
 # Lessonup alias
 server {
-  server_name lessonup.de www.lessonup.de lessonup.be www.lessonup.be lessonup.nl www.lessonup.nl;
+  server_name getlessonup.com www.getlessonup.com lessonup.de www.lessonup.de lessonup.be www.lessonup.be lessonup.nl www.lessonup.nl;
   return 301 $scheme://lessonup.io;
 }
 
