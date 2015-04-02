@@ -23,6 +23,12 @@ server {
   return 301 $scheme://builds.q42.nl;
 }
 
+# Bavataria alias
+server {
+  server_name bavataria.nl;
+  return 301 $scheme://www.bavataria.nl;
+}
+
 # Lessonup alias
 server {
   server_name getlessonup.com www.getlessonup.com lessonup.de www.lessonup.de lessonup.be www.lessonup.be lessonup.nl www.lessonup.nl;
