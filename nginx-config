@@ -29,6 +29,18 @@ server {
   return 301 $scheme://www.bavariakompas.nl;
 }
 
+# Relatiegeschenk 2015 alias
+server {
+  server_name quest42.nl;
+  return 301 $scheme://www.quest42.nl;
+}
+
+# Relatiegeschenk 2010 alias
+server {
+  server_name 2010.q42.nl soyouwanttobeanerd.q42.com soyouwanttobeanerd.q42.nl;
+  return 301 $scheme://2010.q42.com;
+}
+
 # Lessonup alias
 server {
   server_name getlessonup.com www.getlessonup.com lessonup.de www.lessonup.de lessonup.be www.lessonup.be lessonup.nl www.lessonup.nl;
