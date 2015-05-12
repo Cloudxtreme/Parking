@@ -11,10 +11,14 @@
 
 # override this with redirects per domain
 
-# Q42.com alias
+# Q42 alias
 server {
-  server_name q42.mobi www.q42.mobi q42.org www.q42.org;
+  server_name q42.mobi www.q42.mobi q42.org www.q42.org www.q42.com;
   return 301 $scheme://q42.com;
+}
+server {
+  server_name www.q42.nl;
+  return 301 $scheme://q42.nl;
 }
 
 # Builds alias
