@@ -20,6 +20,14 @@ server {
   server_name www.q42.nl;
   return 301 $scheme://q42.nl;
 }
+server {
+  server_name blog.q42.nl;
+  return 301 $scheme://q42.nl/blog;
+}
+server {
+  server_name blog.q42.com;
+  return 301 $scheme://q42.com/blog;
+}
 
 # Builds alias
 server {
