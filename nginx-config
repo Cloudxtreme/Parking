@@ -192,3 +192,9 @@ server {
   server_name handkraft.es www.handkraft.es quplo.com www.quplo.com;
   return 301 $scheme://www.handcraft.com;
 }
+
+# Voor Hester (die van Lukas)
+server {
+  server_name joumoorddinerthuis.nl www.joumoorddinerthuis.nl jouwmoorddinerthuis.nl;
+  return 301 $scheme://www.jouwmoorddinerthuis.nl;
+}
