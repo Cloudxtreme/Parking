@@ -195,6 +195,6 @@ server {
 
 # Voor Hester (die van Lukas)
 server {
-  server_name joumoorddinerthuis.nl www.joumoorddinerthuis.nl jouwmoorddinerthuis.nl;
+  server_name joumoorddiner.nl www.joumoorddiner.nl jouwmoorddiner.nl www.jouwmoorddiner.nl joumoorddinerthuis.nl www.joumoorddinerthuis.nl jouwmoorddinerthuis.nl;
   return 301 $scheme://www.jouwmoorddinerthuis.nl;
 }
