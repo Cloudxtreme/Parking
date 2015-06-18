@@ -11,6 +11,11 @@
 
 # override this with redirects per domain
 
+server {
+  server_name proudapp.com;
+  return 301 $scheme://www.proudapp.com;
+}
+
 # Q42 alias
 server {
   server_name q42.mobi www.q42.mobi q42.org www.q42.org www.q42.com;
