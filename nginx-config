@@ -64,6 +64,12 @@ server {
   return 301 $scheme://lessonup.io;
 }
 
+# Micrio alias
+server {
+  server_name macr.io www.macr.io www.micr.io;
+  return 301 $scheme://micr.io;
+}
+
 # Tools alias
 server {
   server_name vault.q42.com;
