@@ -209,3 +209,8 @@ server {
   server_name joumoorddiner.nl www.joumoorddiner.nl jouwmoorddiner.nl www.jouwmoorddiner.nl joumoorddinerthuis.nl www.joumoorddinerthuis.nl jouwmoorddinerthuis.nl;
   return 301 $scheme://www.jouwmoorddinerthuis.nl;
 }
+
+server {
+  server_name www.frameyourphoto.nl;
+  return 301 $scheme://frameyourphoto.nl;
+}
