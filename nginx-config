@@ -211,6 +211,6 @@ server {
 }
 
 server {
-  server_name www.frameyourphoto.nl;
-  return 301 $scheme://frameyourphoto.nl;
+  server_name frameyourphoto.nl;
+  return 301 $scheme://www.frameyourphoto.nl;
 }
