@@ -214,3 +214,8 @@ server {
   server_name frameyourphoto.nl;
   return 301 $scheme://www.frameyourphoto.nl;
 }
+
+server {
+  server_name ikea.q42.com;
+  return 301 $scheme://ikea.q42.nl;
+}
