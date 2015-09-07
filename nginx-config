@@ -11,6 +11,11 @@
 
 # override this with redirects per domain
 
+server {
+  server_name proudapp.com;
+  return 301 $scheme://www.proudapp.com;
+}
+
 # Q42 alias
 server {
   server_name q42.mobi www.q42.mobi q42.org www.q42.org www.q42.com;
@@ -57,6 +62,12 @@ server {
 server {
   server_name getlessonup.com www.getlessonup.com lessonup.de www.lessonup.de lessonup.be www.lessonup.be lessonup.nl www.lessonup.nl;
   return 301 $scheme://lessonup.io;
+}
+
+# Micrio alias
+server {
+  server_name macr.io www.macr.io www.micr.io;
+  return 301 $scheme://micr.io;
 }
 
 # Tools alias
@@ -197,4 +208,14 @@ server {
 server {
   server_name joumoorddiner.nl www.joumoorddiner.nl jouwmoorddiner.nl www.jouwmoorddiner.nl joumoorddinerthuis.nl www.joumoorddinerthuis.nl jouwmoorddinerthuis.nl;
   return 301 $scheme://www.jouwmoorddinerthuis.nl;
+}
+
+server {
+  server_name frameyourphoto.nl;
+  return 301 $scheme://www.frameyourphoto.nl;
+}
+
+server {
+  server_name ikea.q42.com;
+  return 301 $scheme://ikea.q42.nl;
 }
