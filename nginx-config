@@ -130,7 +130,7 @@ server {
 # w00tcamp alias
 server {
   server_name wootcamp.nl www.wootcamp.nl w00tcamp.nl www.w00tcamp.nl;
-  return 301 $scheme://w00tcamp2014.tumblr.com;
+  return 301 $scheme://w00tcamp2015.tumblr.com;
 }
 
 # Sarien alias
