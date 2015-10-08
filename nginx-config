@@ -70,6 +70,20 @@ server {
   return 301 $scheme://micr.io;
 }
 
+# HappyTools alias
+server {
+  server_name happytools.q42.nl;
+  return 301 $scheme://happytools.q42.com;
+}
+server {
+  server_name companyapi.q42.nl;
+  return 301 $scheme://companyapi.q42.com;
+}
+server {
+  server_name qure.q42.nl;
+  return 301 $scheme://qure.q42.com;
+}
+
 # Tools alias
 server {
   server_name vault.q42.com;
