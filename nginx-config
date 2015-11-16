@@ -16,6 +16,11 @@ server {
   return 301 $scheme://www.proudapp.com;
 }
 
+server {
+  server_name tempo-team.proudapp.com;
+  return 301 $scheme://tempoteam.proudapp.com;
+}
+
 # Q42 alias
 server {
   server_name q42.mobi www.q42.mobi q42.org www.q42.org www.q42.com;
