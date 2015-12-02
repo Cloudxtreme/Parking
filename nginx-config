@@ -131,8 +131,8 @@ server {
   return 301 $scheme://phonebooq.q42.nl;
 }
 server {
-  server_name domains.q42.com;
-  return 301 $scheme://domains.q42.nl;
+  server_name domains.q42.nl;
+  return 301 $scheme://domains.q42.com;
 }
 
 # Numolition alias
