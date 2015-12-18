@@ -39,8 +39,12 @@ server {
   return 301 $scheme://q42.com/blog;
 }
 server {
-  server_name vr.q42.com vr.q42.nl;
+  server_name vr.q42.com;
   return 301 $scheme://q42.com/vr;
+}
+server {
+  server_name vr.q42.nl;
+  return 301 $scheme://q42.nl/vr;
 }
 
 # Builds alias
