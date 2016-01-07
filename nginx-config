@@ -246,3 +246,8 @@ server {
   server_name ikea.q42.com;
   return 301 $scheme://ikea.q42.nl;
 }
+
+server {
+  server_name lakenhal.nl;
+  return 301 $scheme://www.lakenhal.nl;
+}
