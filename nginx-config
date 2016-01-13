@@ -251,3 +251,8 @@ server {
   server_name lakenhal.nl;
   return 301 $scheme://www.lakenhal.nl;
 }
+
+server {
+  server_name friendsoflakenhal.org;
+  return 301 $scheme://www.friendsoflakenhal.org;
+}
