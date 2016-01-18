@@ -249,10 +249,10 @@ server {
 
 server {
   server_name lakenhal.nl;
-  return 301 $scheme://www.lakenhal.nl;
+  return 301 $scheme://www.lakenhal.nl$request_uri;
 }
 
 server {
   server_name friendsoflakenhal.org;
-  return 301 $scheme://www.friendsoflakenhal.org;
+  return 301 $scheme://www.friendsoflakenhal.org$request_uri;
 }
