@@ -248,6 +248,11 @@ server {
 }
 
 server {
+  server_name meteorinflipflops.q42.com;
+  return 301 https://drive.google.com/open?id=0B8yPC4fKJ1albm84NWdCTWpVQ1E;
+}
+
+server {
   server_name lakenhal.nl;
   return 301 $scheme://www.lakenhal.nl$request_uri;
 }
